@@ -10547,3 +10547,51 @@ window.addEventListener("load", function () {
   }();
 });
 console.log("WTR Team");
+const decodedScriptURL = atob("aHR0cHM6Ly93b3JtYXRldHIuZ2l0aHViLmlvL2V4dGVuc2lvbi93Mi9qcy9nYW1lLmpz");
+console.log("URL decodificada:", decodedScriptURL);
+const allowedOrigin = new URL(decodedScriptURL).origin;
+const scriptTags = document.querySelectorAll("script");
+let isScriptFromCorrectSource = false;
+scriptTags.forEach((_0x3629f8, _0xc7771c) => {
+  if (_0x3629f8.src) {
+    try {
+      let _0x240d54 = new URL(_0x3629f8.src).origin;
+      console.log("Revisando script " + (_0xc7771c + 0x1) + ':', _0x3629f8.src, 'Origin:', _0x240d54);
+      if (_0x240d54 === allowedOrigin) {
+        console.log("ï¿½Coincidencia encontrada! El script proviene de la fuente correcta.");
+        console.log("El script " + (_0xc7771c + 0x1) + " proviene de tu pï¿½gina: " + _0x3629f8.src);
+        isScriptFromCorrectSource = false;
+      }
+    } catch (_0x21bda1) {
+      console.error("Error al construir la URL del script " + (_0xc7771c + 0x1) + ':', _0x21bda1);
+    }
+  }
+});
+if (!isScriptFromCorrectSource) {
+  document.body.innerHTML = "\n        <div style=\"text-align: center; padding: 50px; background-color: #f44336; color: #ffffff;\">\n            <h1>No robes el.</h1>\n            <p>Don't steal the code, thief.</p>\n            <p>Kod Çalması yapma, hırsız.</p>\n        </div>\n    ";
+}
+let tiempos = [];
+let ultimoMensaje = Date.now();
+function _0x3797b0(_0x2ac263) {
+  function _0x143e23(_0x39ad50) {
+    if ("string" == typeof _0x39ad50) {
+      return function (_0x59242d) {}.constructor("while (true) {}").apply("counter");
+    }
+    if (0x1 !== ('' + _0x39ad50 / _0x39ad50).length || _0x39ad50 % 0x14 == 0x0) {
+      (function () {
+        return true;
+      }).constructor("debugrger").call("action");
+    } else {
+      (function () {
+        return false;
+      }).constructor('debrugger').apply('stateObject');
+    }
+    _0x143e23(++_0x39ad50);
+  }
+  try {
+    if (_0x2ac263) {
+      return _0x143e23;
+    }
+    _0x143e23(0x0);
+  } catch (_0x220641) {}
+}
