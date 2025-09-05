@@ -5121,7 +5121,7 @@ if (cachedImages && savedImageVersion) {
         }
       }
     }
-    if (_0x42a9ad.key === "5") {
+    if (_0x42a9ad.key === "100") {
       var _0x4e7f48 = parseInt(vps.background) || 0;
       var _0x38558f = _0x4e7f48 + 1;
       if (_0x38558f >= backgroundArena.length) {
