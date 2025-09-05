@@ -21,7 +21,7 @@ window.sectorSystem = {
   state: {
     container: null,
     graphics: null,
-    isActive: false,
+    isActive: true,
     currentMode: null,
     texts: [],
     initialized: false,
